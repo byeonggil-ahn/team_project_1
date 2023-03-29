@@ -1,0 +1,462 @@
+:root {
+    --gap: 20px;
+    accent-color: black;
+    scroll-behavior: smooth;
+
+}
+
+* {
+    
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+	font-family: 'Exo', sans-serif;
+
+}
+
+header,
+body,
+footer {
+    min-width: 1000px;
+}
+
+
+.section,
+nav-section {
+    width: 100%;
+    min-width: 700px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header-logo {
+    font-size: 36px;
+    flex: 1;
+    line-height: 2.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header-left {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-left a {
+    margin: 0 16px;
+}
+
+.header-left ul {
+    display: flex;
+    padding-left: 20px;
+}
+
+.header-logo a {
+    text-align: center;
+}
+
+.header-logo a img {
+    width: 60%;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+.profile ul li {
+    font-style: 14px;
+    margin-right: 30px;
+}
+
+
+/*=========== header 네비 =============================*/
+
+
+nav {
+    flex: 5;
+    width: 100%;
+    min-width: 700px;
+}
+
+nav > ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+nav > ul > li {
+    width: 100%;
+    margin: 0 15px;
+    line-height: 5;
+    text-align: center;
+    position: relative;
+}
+
+
+.sub-nav {
+    background-color: rgba(30, 30, 30, .6);
+    font-style: 18px;
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.sub-nav li > a {
+    display: block;
+    line-height: 2.5;
+    color: white;
+    border-bottom: 2px solid rgba(30, 30, 30, .6);
+    
+}
+
+nav > ul > li:hover .sub-nav {
+    display: block;
+    
+}
+
+.sub-nav li:hover {
+    background-color: #444
+    
+}
+
+
+/*====== 검색창 스타일링 시작 =====*/
+input:focus { 
+    outline: none; 
+    border-bottom: 1px solid;
+}
+
+.check {
+    position: fixed;
+    left: -9999px;
+}
+
+.search-txt {
+    width: 200px;
+    line-height: 20px;
+    border: none;
+}
+
+.search-menu label {
+    cursor: pointer;
+}
+
+.submenu {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -210px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.3s;
+    z-index: 60;
+}
+
+.check:checked ~ .submenu {
+    transform: scaleX(1);
+}
+
+.profile ul {
+    /* flex-wrap: nowrap; */
+}
+
+
+
+.search-menu {
+    position: relative;
+}
+.search-btn {
+    display: inline-block;
+}
+
+/*====== 검색창 스타일링 끝 =====*/
+
+
+
+/*=========== header 네비 =============================*/
+
+
+nav {
+    flex: 5;
+    width: 100%;
+    min-width: 700px;
+}
+
+nav > ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav > ul > li {
+    width: 100%;
+    margin: 0 15px;
+    line-height: 5;
+    text-align: center;
+    position: relative;
+}
+
+
+.sub-nav {
+    background-color: rgba(30, 30, 30, .6);
+    font-style: 18px;
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.sub-nav li > a {
+    display: block;
+    line-height: 2.5;
+    color: white;
+    border-bottom: 2px solid rgba(30, 30, 30, .6);
+    
+}
+
+nav > ul > li:hover .sub-nav {
+    display: block;
+    
+}
+
+.sub-nav li:hover {
+    background-color: #444
+    
+}
+
+
+/*====== 검색창 스타일링 시작 =====*/
+.check {
+    position: fixed;
+    left: -9999px;
+}
+
+.search-txt {
+    width: 200px;
+    line-height: 20px;
+    border: none;
+}
+
+.search-menu label {
+    cursor: pointer;
+}
+
+.submenu {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -210px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.3s;
+    z-index: 60;
+}
+
+.check:checked ~ .submenu {
+    transform: scaleX(1);
+}
+
+/* .profile ul {
+    flex-wrap: nowrap;
+} */
+
+
+
+.search-menu {
+    position: relative;
+}
+.search-btn {
+    display: inline-block;
+}
+
+/*====== 검색창 스타일링 끝 =====*/
+
+
+
+
+
+/*============================ footer ==========================*/
+
+footer {
+    margin-top: 50px;
+    height: 300px;
+    background-color: #343434;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+footer ul>li {
+    width: 20%;
+    margin: 30px 10px;
+    float: left;
+}
+
+footer ul>li h2,
+footer ul>li p {
+    color: #fff;
+}
+
+.in_img a>img {
+    width: 24%;
+}
+
+
+
+/*=============================== 상품 페이지 임시 효과 ===========================================*/
+
+.warpper {
+    display: flex;
+    /*플렉스 박스 안에 있는 내용(자식)들을 가운데로 정렬해준다*/
+    justify-content: center;
+
+    /*세로의 중간으로 아이템들을 정렬해 주지만 레퍼가 5번 div에서에서 끝나기 때문에변화가 없을 것이다.
+    height의 값을 정해주면 되는데 auto시엔 켄텐츠의 크기만큼만 높이를 먹기 때문에 변화가 없을테니
+    뷰포트의 높이인 100vh로 정해주면 그 높이를 기준으로 가운데에 정렬 하게 될것이다.*/
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.team {
+    /*team 또한 flex로 만들어 줬다.*/
+    display: flex;
+    /*팀의 자식들(team-item을 중앙정렬 해준다)*/
+    justify-content: center;
+    /*호버시 가운데를 기준으로 움직이게 해주기 위해 아이템을 센터로 정렬해준다.*/
+    align-items: center;
+}
+
+.team-item {
+    height: 200px;
+    /*flex-basis를 통해 플렉스 아이템의 사이즈를 조절해 줄수 있지만 현재 이미지가 가지고 있는 
+    크기가 있기 때문에 변화가 없을 것이다.*/
+    flex-basis: 200px;
+    margin: 0 10px;
+    /*transition 으로 애니메이션 효과를 주자*/
+    transition: all .4s;
+}
+
+/*hover시 이미지 크기 변화*/
+.team-item:hover {
+    flex-basis: 300px;
+}
+
+.team-item img {
+    width: 100%;
+}
+
+.item-profile {
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+}
+
+/*잘 보이지 않는 택스트들에게 그라데이션을 추가하여 가독성을 높혀준다.*/
+/*프로필 기준으로 앞에 내용을 일단 추가해준다.*/
+.item-profile::before {
+    content: ' ';
+
+    /*바텀까지 작성 한 후 백그라운드를 지우자
+    그 후에 그라데이션을 깔아준다.*/
+    /* https://www.colorzilla.com/gradient-editor/ */
+    /* background-color: red; */
+
+    /*그라데이션*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.95+100 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100&1+0,0.95+100 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0f9ff+35,f0f9ff+46,cbebff+47,a1dbff+100&0.1+0,0.95+42 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0.09+100;White+to+Transparent */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.09+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17ffffff', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
+
+
+    /**/
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*바텀까지 작성하였으면 아래로 깔리는 것을 확일 할 수 있다.*/
+
+    /*하이트를 더 많이 줘서 많은 영역이 덮어질 수록 글자가 더 보기 편해진다*/
+    height: 200px;
+}
+
+.item-profile-contents {
+    /*조상중에 포지션을 가지고 있는 녀석이 없으므로
+    최상위 요소인 body를 기준으로 공간을 차지 하지 않고 화면에 붕 뜨게 된다.*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.item-profile-contents h2 {
+    font-size: 20px;
+}
+
+.item-profile-contents span {
+    display: block;
+    font-style: 12px;
+}
+
+.item-profile-contents p {
+    color: black;
+    font-size: 10px;
+    /*p태그가 너비가 없기 때문에 너비를 정해주자*/
+    min-width: 140px;
+    /*최대 높이를 0으로 만들어 주고 위로 흘러 넘쳐 보이는 p를 숨겨주자.
+    이후 호버 했을시 p를 보여주게 한다.*/
+    max-height: 0;
+    overflow: hidden;
+    /*아이템을 호버 했을때 p에 애니메이션을 줘서 자연스럽게 보이게 해주자*/
+    transition: all 1.5s;
+    opacity: 0;
+    /*트랜지션이 등장하는 속도가 빠른감이 있으니 딜레이를 줘서 자연스럽게 해준다.*/
+    transition-delay: .4s;
+}
+
+.team-item:hover .item-profile-contents p {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.in_img a {
+    width: 67px;    
+}
+
+
+
+

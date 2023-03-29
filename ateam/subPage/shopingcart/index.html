@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700|Satisfy" rel="stylesheet">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/d0b6273e6e.js" crossorigin="anonymous"></script>
+    <title>장바구니</title>
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <div class="header-left">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-truck-fast"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-logo">
+                <a href="../../index.html">
+                    <img src="./image/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="profile">
+                <ul>
+                    <li>
+                        <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+                        <div class="search-menu">
+                            <input class="check" id="search" type="checkbox">
+                            <label for="search" class="toggle-btn" onclick=""><i class="fas fa-search"></i></label>
+                            <form class="submenu" action="../main/index.html" method="post">
+                                <input class="search-txt" id="search-item" type="text" placeholder="찾으실 상품을 입력해주세요">
+                                <!-- <button class="search-btn"><i class="fas fa-search"></i></button> -->
+                            </form>
+                        </div>
+                        <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+                    </li>
+                    <li><a href="../login/login.html"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="../shopingcart/index.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-section">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Main</a>
+                    </li>
+                    <li>
+                        <a href="#new-arrival">신상품</a>
+                    </li>
+                    <li>
+                        <a href="../상품목록/index.html">전체 상품</a>
+                    </li>
+                    <li>
+                        <a href="#">향기</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">Amber</a></li>
+                            <li><a href="#">Aqua marine</a></li>
+                            <li><a href="#">Aromatic</a></li>
+                            <li><a href="#">Citrus</a></li>
+                            <li><a href="#">Floral</a></li>
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Green</a></li>
+                            <li><a href="#">Orental</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        고객샌터
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header 종료 -->
+
+    <section class="cart">
+        <!-- 장바구니 주의 설명 부분 -->
+        <div class="cart-info">
+            <ul>
+                <li>장바구니 상품은 최대 15일간 저장됩니다.</li>
+                <li>특별한 사정이 없는 이상 배송은 결재완료 후 다음 날 배송됩니다.</li>
+            </ul>
+        </div>
+
+        <!-- 장바구니에 담긴 목록을 나타낼 테이블 -->
+        <table class="cart-list">
+            <form>
+                <!-- table head -->
+                <thead>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td colspan="2">상품정보</td>
+                        <td>옵션</td>
+                        <td>상품금액</td>
+                        <td>배송비</td>
+                    </tr>
+                </thead>
+
+                <!-- table body -->
+                <tbody>
+                    <!-- 상품목록 첫번째 줄 -->
+                    <tr class="cart-list-detail">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <img src="./image/08_bergamot_large.jpg" alt="">
+                        </td>
+                        <td>
+                            <a href="#">공식 스토어</a>
+                            <span>브랜드명</span>
+                            <p>상품명 - 상품코드</p>
+                            <span class="price">250,000원(할인가)</span>
+                            <span>270,000(정상가)</span>
+                        </td>
+                        <td class="cart-list-option">
+                            <p>모델명</p>
+                            <button class="cart-list-optionBtn">주문조건 추가/변경</button>
+                        </td>
+                        <td class="cart-list-price">
+                            <span class="price">250,000원</span>
+                            <button class="cart-list-orderBtn">주문하기</button>
+                        </td>
+                        <td>
+                            무료
+                        </td>
+                    </tr>
+
+                    <!-- 상품목록 두번째 줄 -->
+                    <tr class="cart-list-detail">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <img src="./image/main_gallery_01.jpg" alt="">
+                        </td>
+                        <td>
+                            <a href="#">공식 스토어</a>
+                            <span>브랜드명</span>
+                            <p>상품명 - 상품코드</p>
+                            <span class="price">250,000원(할인가)</span>
+                            <span>270,000(정상가)</span>
+                        </td>
+                        <td class="cart-list-option">
+                            <p>모델명</p>
+                            <button class="cart-list-optionBtn">주문조건 추가/변경</button>
+                        </td>
+                        <td>
+                            <span class="price">250,000원</span>
+                            <button class="cart-list-orderBtn">주문하기</button>
+                        </td>
+                        <td>
+                            무료
+                        </td>
+                    </tr>
+                </tbody>
+
+                <!-- table footer -->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <input type="checkbox">
+                            <button class="cart-list-optionBtn">선택상품 삭제</button>
+                            <button class="cart-list-optionBtn">선택상품 찜</button>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </form>
+        </table>
+
+        <!-- 쇼핑 계속하기 -->
+        <div class="cart-mainBtn">
+            <button>
+                <a href="../product/index.html">
+                    쇼핑 계속하기
+                </a>
+            </button>
+            <button>
+                <a href="../buyer/index.html">
+                    주문하기
+                </a>
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- fotter 시작-->
+    <footer class="box-footer">
+        <ul class="w1300">
+            <li>
+                <h2>Perfume</h2>
+                <p>
+                    Human feel infinite happiness in nature.Origo is trying to represent the color of nature, and
+                    tries
+                    to satisfy this happiness through the product.Origo aims to harmonize nature, human and color.
+                </p>
+            </li>
+            <li>
+                <h2>Perfume</h2>
+                <p>
+                    24, Saemal-gil, Opo-eup, Gwangju-si, Gyeonggi-do, Republic of Korea<br />
+                    origokorea@origo.co.kr<br />
+                    +82 (0)70-7491-5705
+                </p>
+            </li>
+            <li>
+                <h2>Newsletter</h2>
+                <p>
+                    With approaching of 2017 HOMI Fair in Milano, we cordially welcome you to visit our booth
+                    at.<br />
+                    Pav24 (Living Habits &amp; Gift) L03A 2017.09.15.Fri. - 09.18.Mon.
+                </p>
+            </li>
+            <li>
+                <h2>Instagram</h2>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

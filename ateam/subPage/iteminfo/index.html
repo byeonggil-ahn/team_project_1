@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Exo:400,700|Satisfy" rel="stylesheet">
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/sytel.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d0b6273e6e.js" crossorigin="anonymous"></script>
+  <title>상품 정보</title>
+</head>
+
+<body>
+  <header>
+    <div class="section">
+      <div class="header-left">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-truck-fast"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-regular fa-bookmark"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-logo">
+        <a href="../../index.html">
+          <img src="./image/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="profile">
+        <ul>
+          <li>
+            <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+            <div class="search-menu">
+              <input class="check" id="search" type="checkbox">
+              <label for="search" class="toggle-btn" onclick=""><i class="fas fa-search"></i></label>
+              <form class="submenu" action="../main/index.html" method="post">
+                <input class="search-txt" id="search-item" type="text" placeholder="찾으실 상품을 입력해주세요">
+                <!-- <button class="search-btn"><i class="fas fa-search"></i></button> -->
+              </form>
+            </div>
+            <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+          </li>
+          <li><a href="../login/login.html"><i class="fa-regular fa-user"></i></a></li>
+          <li><a href="../shopingcart/index.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav-section">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Main</a>
+          </li>
+          <li>
+            <a href="#new-arrival">신상품</a>
+          </li>
+          <li>
+            <a href="../product/index.html">전체 상품</a>
+          </li>
+          <li>
+            <a href="#">향기</a>
+            <ul class="sub-nav">
+              <li><a href="#">Amber</a></li>
+              <li><a href="#">Aqua marine</a></li>
+              <li><a href="#">Aromatic</a></li>
+              <li><a href="#">Citrus</a></li>
+              <li><a href="#">Floral</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Green</a></li>
+              <li><a href="#">Orental</a></li>
+            </ul>
+          </li>
+          <li>
+            고객센터
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main 시작 -->
+  <main>
+    <div class="card-wrapper">
+      <div class="card">
+        <!-- card left -->
+        <div class="product-imgs">
+          <div>
+            <div class="img-perfume">
+              <img src="./image/number1.png" alt="perfume image">
+            </div>
+          </div>
+          <div class="img-select">
+            <div class="img-item">
+              <a href="#">
+                <img src="./image/number1.png" alt="perfume image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#">
+                <img src="./image/number2.png" alt="perfume image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#">
+                <img src="./image/number3.png" alt="perfume image">
+              </a>
+            </div>
+            <div class="img-item">
+              <a href="#">
+                <img src="./image/number6.jpg" alt="perfume image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class="product-content">
+          <h1 class="product-title">향수 이름</h1>
+          <a href="../../index.html" class="product-link">VISIT PERFUME STORE</a>
+          <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.7(21)</span>
+          </div>
+
+          <div class="product-price">
+            <p class="last-price"><span>50,000 원</span></p>
+            <p class="new-price"><span>35,000 원 <strong>(30%)</strong></span></p>
+          </div>
+
+          <div class="product-detail">
+            <h2>상품 세부 정보: </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat
+              sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos,
+              labore suscipit. Unde.</p>
+            <ul>
+              <li>향기 : <span>Musky</span></li>
+              <li>재고 : <span>있음</span></li>
+              <li>카테고리 : <span>향수</span></li>
+              <li>배송지역 : <span>전국</span></li>
+              <li>배송비 : <span>무료</span></li>
+            </ul>
+          </div>
+
+          <div class="purchase-info">
+            <input type="number" min="0" value="1">
+            <button type="button" class="btn">
+              <a style="color:white" href="../shopingcart/index.html">
+                장바구니 <i class="fas fa-shopping-cart"></i>
+              </a>
+            </button>
+            <button type="button" class="btn">구매</button>
+          </div>
+
+          <div class="social-links">
+            <p>Share At: </p>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product_info" id="info">
+      <div class="product_infochild1">
+        <img src="./image/number1.png" alt="perfume image">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi ullam,
+          autem fuga reprehenderit laudantium et doloribus vero sed quod obcaecati rat
+          ione id assumenda libero reiciendis illum mollitia nesciunt quae!</p>
+      </div>
+      <div class="bullbox1">
+        <div>&bull;</div>
+        <div>&bull;</div>
+        <div>&bull;</div>
+      </div>
+      <div class="product_infochild2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam commodi ullam,
+          autem fuga reprehenderit laudantium et doloribus vero sed quod obcaecati rat
+          ione id assumenda libero reiciendis illum mollitia nesciunt quae!</p>
+        <img src="./image/number6.jpg" alt="perfume image">
+      </div>
+      <div class="bullbox2">
+        <div>&bull;</div>
+        <div>&bull;</div>
+        <div>&bull;</div>
+      </div>
+      <div class="productcontainer1">
+        <img src="./image/number1.png" alt="perfume image">
+        <img src="./image/number2.png" alt="perfume image">
+        <img src="./image/number3.png" alt="perfume image">
+        <img src="./image/number6.jpg" alt="perfume image">
+      </div>
+      <div class="main_box">
+        <div><a href="#info">상세 정보</a></div>
+        <div id="review"><a href="#review">상품 후기</a></div>
+        <div><a href="#qna">상품 문의</a></div>
+      </div>
+    </div>
+    <table class="main_table">
+      <tr class="firsttr">
+        <td class="firsttd"><img src="./image/number1.png" alt="perfume image"></td>
+        <td class="secondtd">
+          <h2>향기가 오래가고 진합니다.</h2>
+          <p>Lorem ipsum, dolor sit aLorem ipsum, dolor sit amet conse
+            ctetur Lorem ipsum, dolor sit amet consectetur met consectetur lore</p>
+        </td>
+        <td class="thirdtd">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><br>
+          김XX
+        </td>
+      </tr>
+      <tr>
+        <td class="firsttd"><img src="./image/number6.jpg" alt="perfume image"></td>
+        <td class="secondtd">
+          <h2>강하지 않고,오래갑니다.</h2>
+          <p>Lorem ipsum, dolor sit aLorem ipsum, dolorrem psum, dolor sit aLorem ipsum, dolorrem
+            ipsum, dolor sit aLorem ipsum, dolor sit amet conse</p>
+        </td>
+        <td class="thirdtd">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><br>
+          안XX
+        </td>
+      </tr>
+    </table>
+    <div class="qnacontainer1" id="qna">
+      <div class="qnachild1">
+        <b>상품 Q&A</b>
+        <P>
+          -상품에 대해 궁금한 점을 남겨주세요.<br>
+          -문의 답변은 마이페이지>상품Q&A에서 확인하실 수 있습니다.<br>
+          -공개된 공간이므로 전화번호,메일 주소 등 고객님의 소중한 개인정보는 절대 남기지 말아주세요.
+        </P>
+      </div>
+      <div class="qnachild2">문의하기</div>
+      <table class="qnatable">
+        <tr>
+          <th></th>
+          <th colspan="">문의/답변</th>
+          <th></th>
+          <th>작성자</th>
+          <th>작성일</th>
+        </tr>
+        <tr>
+          <td colspan="5">등록된 Q&A가 없습니다</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <!-- main 종료 -->
+
+  <!-- fotter 시작-->
+  <footer class="box-footer">
+    <ul class="w1300">
+      <li>
+        <h2>Perfume</h2>
+        <p>
+          Human feel infinite happiness in nature.Origo is trying to represent the color of nature, and
+          tries
+          to satisfy this happiness through the product.Origo aims to harmonize nature, human and color.
+        </p>
+      </li>
+      <li>
+        <h2>Perfume</h2>
+        <p>
+          24, Saemal-gil, Opo-eup, Gwangju-si, Gyeonggi-do, Republic of Korea<br />
+          origokorea@origo.co.kr<br />
+          +82 (0)70-7491-5705
+        </p>
+      </li>
+      <li>
+        <h2>Newsletter</h2>
+        <p>
+          With approaching of 2017 HOMI Fair in Milano, we cordially welcome you to visit our booth
+          at.<br />
+          Pav24 (Living Habits &amp; Gift) L03A 2017.09.15.Fri. - 09.18.Mon.
+
+        </p>
+      </li>
+      <li>
+        <h2>Instagram</h2>
+        <p class="in_img">
+        </p>
+      </li>
+    </ul>
+  </footer>
+  </section>
+</body>
+
+</html>

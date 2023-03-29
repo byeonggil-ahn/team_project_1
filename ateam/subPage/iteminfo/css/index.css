@@ -1,0 +1,381 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        line-height: 1.5;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+
+    .card-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .product-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .img-perfume {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .img-perfume img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .img-select {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-item img {
+        margin: 16px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .img-item:hover {
+        opacity: 0.8;
+    }
+
+    .product-content {
+        padding: 2rem 1rem;
+    }
+
+    .product-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #12263a;
+        margin: 16px 0;
+    }
+
+    .product-link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.9rem;
+        display: inline-block;
+        margin-bottom: 8px;
+        background: #256eff;
+        color: #fff;
+        padding: 0 0.3rem;
+        transition: all 0.5s ease;
+    }
+
+    .product-link:hover {
+        opacity: 0.7;
+    }
+
+    .product-rating>i {
+        color: #ffc107;
+    }
+
+    .product-rating span {
+        font-weight: 600;
+        color: #252525;
+    }
+
+    .product-price {
+        margin: 16px 0;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .product-price span {
+        font-weight: 400;
+    }
+
+    .last-price span {
+        color: gray;
+        text-decoration: line-through;
+    }
+
+    .new-price span {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .new-price span>strong {
+        color:#256eff;
+    }
+
+    .product-detail h2 {
+        color: #12263a;
+        margin-bottom: 10px;
+    }
+
+    .product-detail p {
+        font-size: 15px;
+        padding: 5px;
+        opacity: 0.8;
+    }
+
+    .product-detail ul {
+        margin: 16px 0;
+        font-size: 0.9rem;
+    }
+
+    .product-detail ul li {
+        margin: 0;
+        list-style: none;
+        background: url(../image/checked1.png) left center no-repeat;
+        background-size: 18px;
+        padding-left: 20px;
+        margin: 6.5px 0;
+        font-weight: 600;
+    }
+
+    .product-detail ul li span {
+        font-weight: 400;
+    }
+
+    .purchase-info {
+        margin: 1.5rem 0;
+    }
+
+    .purchase-info input,
+    .purchase-info .btn {
+        border: 1.5px solid #ddd;
+        border-radius: 25px;
+        text-align: center;
+        padding: 0.45rem 0.8rem;
+        outline: 0;
+        margin-right: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .purchase-info input {
+        width: 60px;
+    }
+
+    .purchase-info .btn {
+        color: #fff;
+    }
+
+    .purchase-info .btn:first-of-type {
+        background: #256eff;
+    }
+
+    .purchase-info .btn:last-of-type {
+        background: #f64749;
+        width: 100px;
+    }
+
+    .purchase-info .btn:hover {
+        opacity: 0.7;
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        color: #000;
+        border: 1px solid #000;
+        margin: 0 5px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 0.8rem;
+        transition: all 0.5s ease;
+    }
+
+    .social-links a:hover {
+        background: #000;
+    }
+   
+    .social-links a:hover i {
+        color: white;
+    }
+
+    /* css 합쳤을때,아래 인스타 img 세로로 늘어져서 initial */
+    .in_img img {
+        display: initial;
+    }
+
+
+    .product_info {
+        border-top: 3px solid #000;
+        width: 1100px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .product_infochild1,
+    .product_infochild2 {
+        width: 1000px;
+        height: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .product_infochild1 img,
+    .product_infochild2 img {
+        width: 350px;
+        height: 300px;
+        display: inline-block;
+        box-shadow: 5px 5px 5px 1px;
+        margin: 0 30px 0 30px;
+
+    }
+
+    .product_infochild1 p,
+    .product_infochild2 p {
+        display: inline-block;
+        width: 500px;
+    }
+
+
+    .productcontainer1 img {
+        width: 300px;
+        height: 300px;
+        box-shadow: 5px 5px 5px 1px;
+    }
+
+    .productcontainer1 {
+        display: grid;
+        grid-template: 300px 300px / 300px 300px;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .bullbox1>div,
+    .bullbox2>div {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .productcontainer1::after {
+        content: "";
+        border-bottom: solid 3px black;
+        width: 700px;
+    }
+
+    .main_box {
+        display: flex;
+        width: 800px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 40px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .main_box>div {
+        width: 33%;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .main_box>div::before,
+    .main_box>div::after {
+        content: "ㅣ";
+    }
+
+    .main_table {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin: 0 auto;
+        margin-top: 100px;
+        border-collapse: collapse;
+    }
+
+    .main_table td {
+        width: 150px;
+        height: 150px;
+    }
+
+    .main_table .firsttr>td {
+        border-bottom: solid 1px black;
+    }
+
+
+    .main_table .secondtd {
+        width: 450px;
+    }
+
+    .secondtd h2 {
+        text-shadow: 3px 3px 5px gray;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .main_table img {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+        box-shadow: 5px 5px 5px 1px;
+    }
+
+    .qnacontainer1 {
+        width: 900px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .qnatable {
+        border-collapse: collapse;
+    }
+
+    .qnachild1 {
+        width: 600px;
+        height: 200px;
+        margin: 20px;
+        display: inline-block;
+    }
+
+    .qnachild1>b {
+        font-size: 1.3rem;
+    }
+
+    .qnachild2 {
+        width: 200px;
+        height: 50px;
+        border: 1px solid red;
+        color: red;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .qnatable th,
+    .qnatable td {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .qnatable th {
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+
+    .qnatable td {
+        border-bottom: solid 1px gray;
+        opacity: .3;
+    }

@@ -1,0 +1,169 @@
+:root {
+    --gap: 20px;
+}
+
+* {
+    
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+	font-family: 'Exo', sans-serif;
+
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section {
+    width: 1300px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-size: 36px;
+    flex: 1;
+    padding: 0 0 0 30px;
+    line-height: 2.5;
+}
+
+/*=========== header 네비 =============================*/
+
+nav {
+    /*임의로 위치 지정. 직접 수정하면서 수치 확인*/
+    flex: 8;
+}
+
+nav > ul {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+nav > ul > li {
+    width: 100%;
+    margin: 0 15px;
+    line-height: 5;
+    text-align: center;
+    position: relative;
+}
+
+.profile {
+    /* flex: 1; */
+}
+
+.profile ul {
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.profile ul li {
+    font-style: 14px;
+    line-height: 6.2;
+    margin-right: 30px;
+}
+
+.sub-nav {
+    background-color: rgba(30, 30, 30, .6);
+    font-style: 18px;
+    display: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.sub-nav li > a {
+    display: block;
+    line-height: 2.5;
+    color: white;
+    border-bottom: 2px solid rgba(30, 30, 30, .6);
+    
+}
+
+nav > ul > li:hover .sub-nav {
+    display: block;
+    
+}
+
+.sub-nav li:hover {
+    background-color: #444
+    
+}
+
+/*============================= main 시작 ================================*/
+
+/*======================= main 이미지 ============================*/
+main {
+    background: white;
+    color: #5a5656;
+    display: grid;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    place-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h1,
+p {
+    margin-bottom: 10px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.uppercase { 
+    text-transform: uppercase; 
+}
+
+
+
+
+/*====================== main 내용 끝 ================================*/
+
+
+
+/*============================ footer ==========================*/
+
+footer {
+	margin-top: 50px; 
+	height: 300px;
+	background-color: #343434;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+footer ul > li {
+	width: 20%;
+	margin: 30px 10px;
+	float: left;
+}
+footer ul > li h2, footer ul > li p {
+	color: #fff;
+}
+.in_img a > img {
+	width: 24%;
+}
+

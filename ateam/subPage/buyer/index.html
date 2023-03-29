@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700|Satisfy" rel="stylesheet">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d0b6273e6e.js" crossorigin="anonymous"></script>
+    <title>주문서</title>
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <div class="header-left">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-truck-fast"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-logo">
+                <a href="../../index.html">
+                    <img src="./image/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="profile">
+                <ul>
+                    <li>
+                        <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+                        <div class="search-menu">
+                            <input class="check" id="search" type="checkbox">
+                            <label for="search" class="toggle-btn" onclick=""><i class="fas fa-search"></i></label>
+                            <form class="submenu" action="../main/index.html" method="post">
+                                <input class="search-txt" id="search-item" type="text" placeholder="찾으실 상품을 입력해주세요">
+                                <!-- <button class="search-btn"><i class="fas fa-search"></i></button> -->
+                            </form>
+                        </div>
+                        <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+                    </li>
+                    <li><a href="../login/login.html"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 메인=================================================================-->
+
+    <div class="container">
+        <form>
+            <h1>상품 주문서</h1>
+            <fieldset>
+                <legend>주문 정보</legend>
+                <table class="cart-list">
+                    <!-- table head -->
+                    <thead>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td colspan="2">상품정보</td>
+                            <td>옵션</td>
+                            <td>상품금액</td>
+                            <td>배송비</td>
+                        </tr>
+                    </thead>
+
+                    <!-- table body -->
+                    <tbody>
+                        <!-- 상품목록 첫번째 줄 -->
+                        <tr class="cart-list-detail">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <img src="./image/08_bergamot_large.jpg" alt="perfume img">
+                            </td>
+                            <td>
+                                <a href="#">공식 스토어</a>
+                                <span>브랜드명</span>
+                                <p>상품명 - 상품코드</p>
+                                <span class="price">250,000원(할인가)</span>
+                                <span class="price2">270,000(정상가)</span>
+                            </td>
+                            <td class="cart-list-option">
+                                <p>모델명</p>
+                                <button class="cart-list-optionBtn">주문조건 추가/변경</button>
+                            </td>
+                            <td class="cart-list-price">
+                                <span class="price">250,000원</span>
+                                <button class="cart-list-orderBtn">주문하기</button>
+                            </td>
+                            <td>
+                                무료
+                            </td>
+                        </tr>
+
+                        <!-- 상품목록 두번째 줄 -->
+                        <tr class="cart-list-detail">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <img src="./image/main_gallery_01.jpg" alt="perfume img">
+                            </td>
+                            <td>
+                                <a href="#">공식 스토어</a>
+                                <span>브랜드명</span>
+                                <p>상품명 - 상품코드</p>
+                                <span class="price">250,000원(할인가)</span>
+                                <span class="price2">270,000(정상가)</span>
+                            </td>
+                            <td class="cart-list-option">
+                                <p>모델명</p>
+                                <button class="cart-list-optionBtn">주문조건 추가/변경</button>
+                            </td>
+                            <td>
+                                <span class="price">250,000원</span>
+                                <button class="cart-list-orderBtn">주문하기</button>
+                            </td>
+                            <td>
+                                무료
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <!-- table footer -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <input type="checkbox">
+                                <button class="cart-list-optionBtn">선택상품 삭제</button>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>주문자 정보</legend>
+                <ul>
+                    <li>
+                        <input type="text" placeholder="우편번호" size="30">
+                        <button class="addressbtn">주소 찾기</button>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="기본 주소" size="100">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="상세 주소 및 상세 건물 명" size="100">
+                    </li>
+                    <li>
+                        <input type="text" id="name" placeholder="이 름" required>
+                    </li>
+                    <li>
+                        <select name="number" id="number">
+                            <option>010</option>
+                            <option>011</option>
+                            <option>016</option>
+                            <option>017</option>
+                            <option>018</option>
+                            <option>019</option>
+                        </select>
+                        &mdash;
+                        <input type="tel" id="tel1" placeholder="앞자리" required>
+                        &mdash;
+                        <input type="tel" id="tel2" placeholder="뒷자리" required>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="이메일 아이디">
+                        <span>@</span>
+                        <input type="text" placeholder="이메일 도메인">
+                        <div class="sel-email">
+                            <select name="ordEmail" id="ordEmail">
+                                <option value="01">직접입력</option>
+                                <option value="02">naver.com</option>
+                                <option value="03">daum.net</option>
+                                <option value="04">nate.com</option>
+                                <option value="05">gmail.com</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="centered">
+                <input type="submit" value="주문하기" class="centeredBtn">
+                <input type="reset" value="다시 작성" class="centeredBtnTri">
+            </div>
+        </form>
+    </div>
+
+    <!-- 푸터====================================================================== -->
+    <footer class="box-footer">
+        <ul class="w1300">
+            <li>
+                <h2>Perfume</h2>
+                <p>
+                    Human feel infinite happiness in nature.Origo is trying to represent the color of nature, and
+                    tries
+                    to satisfy this happiness through the product.Origo aims to harmonize nature, human and color.
+                </p>
+            </li>
+            <li>
+                <h2>Perfume</h2>
+                <p>
+                    24, Saemal-gil, Opo-eup, Gwangju-si, Gyeonggi-do, Republic of Korea<br />
+                    AteamPf@ateam.co.kr<br />
+                    +82 (0)70-7491-5705
+                </p>
+            </li>
+            <li>
+                <h2>Newsletter</h2>
+                <p>
+                    With approaching of 2023 HOMI Fair in Korea, we cordially welcome you to visit our booth
+                    at.<br />
+                    Pav24 (Living Habits &amp; Gift) L03A 2023.01.01.Mon. - 07.30.Mon.
+
+                </p>
+            </li>
+            <li>
+                <h2>Instagram</h2>
+                <p class="in_img">
+                </p>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

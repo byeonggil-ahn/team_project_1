@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/cart.css">
+    <title>장바구니_사이드</title>
+</head>
+
+<body>
+    <!-- 전체 컨테이너 영역 -->
+    <div class="cart_container">
+
+        <!-- 패딩, 마진 주기위한 컨테이너 -->
+        <div class="cart-inner_container">
+
+            <!-- 장바구니 글자 컨테이너 -->
+            <div class="cart_name">
+                <h2>장바구니</h2>
+            </div>
+
+            <div class="cart_main">
+                <!-- 장바구니 컨테이너 -->
+                <div class="cart-item_container">
+                    <!-- 패딩 넣을 컨테이너 -->
+                    <div class="cart-item">
+                        <!-- flex로 정렬하기 위한 컨테이너 -->
+                        <div class="row">
+                            <!-- 상품 이미지 블럭 -->
+                            <div class="cart-img">
+                                <a href=""></a>
+                                <img src="https://cdn.pixabay.com/photo/2021/08/03/06/47/perfume-6518634_1280.jpg"
+                                    alt="">
+                            </div>
+                            <!-- 상품 정보(이름 삭제 가격) -->
+                            <div class="cart-info">
+                                <p>
+                                    ateam prototype perfume mk2<br />
+                                    -리미티드 에디션-<br>
+                                    <a href="">삭제</a><br>
+                                    260,000 원
+                                </p>
+                            </div>
+                            <!-- 제품 수량 컨테이너 -->
+                            <div class="cart-amount">
+                                <p>수량: 2개</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="cross">
+
+                <!-- 제품 총 가격 컨테이너 -->
+                <div class="total_price">
+                    <p>합계 : 520,000 원</p>
+                </div>
+
+                <hr class="cross">
+                <div class="gift_container">
+                    <h3>기프트</h3>
+                </div>
+
+                <!-- 포장 방법 선택 컨테이너 -->
+                <div class="cart-packaging">
+                    <button class="underline">포장 방법 선택하기</button>
+                </div>
+
+                <!-- 포장 옵션 컨테이너 -->
+                <div class="package-area">
+                    <!-- flex로 정렬하기 위한 컨테이너 -->
+                    <div class="row">
+                        <!-- 제품 포장 이미지 -->
+                        <div class="package-img">
+                            <img src="./img/package.png" alt="package">
+                        </div>
+                        <!-- 제품 포장 설명 -->
+                        <div class="package-info">
+                            <p>에코 프랜들리 포장 서비스</p>
+                            <p>무료</p>
+                        </div>
+                        <!-- 포장 갯수 설명 -->
+                        <div class="package-amount">
+                            <span>수량: 1개</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr class="cross">
+                <!-- 선물 메세지 area -->
+                <div class="gift-message_area">
+
+                    <a href="">기프트 메시지 추가하기
+                        <span>-</span>
+                    </a>
+                    <!-- 선물 메세지 작성 박스 -->
+                    <div class="gift-message_form">
+                        <p>기프트 메시지 카드에 인쇄하여 주문 시 동봉해 드립니다.</p>
+                        <p>한글, 영문, 숫자 및 #, @, |를 제외한 기호를 사용할 수 있습니다</p>
+                        <div class="gift-message-textarea">
+                            <textarea name="gift_message" id="gift_message" cols="30" rows="2" maxlength="155"
+                                wrap="hard" placeholder="한줄당 25자까지 6줄 입력할 수 있습니다"></textarea>
+                        </div>
+                        <p id="gift-message_limit">150자 남음</p>
+                    </div>
+                </div>
+
+                <hr class="cross">
+
+                <!-- 할인 영역 컨테이너 -->
+                <div class="discount">
+                    <p>이벤트 코드 적용하기</p>
+                    <!-- 그리드로 나누기 위한 컨테이너 -->
+                    <div class="discount_grid">
+                        <!-- 이벤트 코드 입력 영역 -->
+                        <div class="discount_from-data">
+                            <span>
+                                <input class="text_input" type="text" id="discount" name="discount" value="이벤트코드">
+                                <!-- <label class="form-data"for="">이벤트 코드</label> -->
+                            </span>
+                        </div>
+                        <!-- 쿠폰 적용 버튼 부분 -->
+                        <div class="discount_btn">
+                            <a href="#" id="discount_apply" class="discount-btn">
+                                <span>적용</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 주문하기 영역 컨테이너 -->
+                <div class="form-data">
+                    <!-- 주문 주의사항 컨테이너 -->
+                    <div class="order_discrp">
+                        <p>
+                            결제 완료 후에는 주문 취소 및 변경이 불가능하며, 제품 수령
+                            후 반품 절차로만 진행 가능합니다. 장바구니에 담긴 구매 제품,
+                            선물 포장 선택 사항을 다시 한번 확인 부탁드립니다.
+                        </p>
+                        <p>
+                            모든 구매 혜택은 ateam 온라인 부티크 회원에게만 제공됩니다.
+                        </p>
+                        <p>
+                            반품 및 교환시 모든 패키지 요소가 포함되어야 하며, 미
+                            포함 시 반품 및 교환이 불가합니다.
+                        </p>
+                    </div>
+                </div>
+                <!-- 주문하기 버튼 영역 -->
+                <div class="order_btn">
+                    <button>
+                        <span style="color: white;">주문하기</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

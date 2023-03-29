@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700|Satisfy" rel="stylesheet">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d0b6273e6e.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <div class="header-left">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-truck-fast"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-logo">
+                <a href="../../index.html">
+                    <img src="./image/logo.png" alt="로고">
+                </a>
+            </div>
+            <div class="profile">
+                <ul>
+                    <li>
+                        <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+                        <div class="search-menu">
+                            <input class="check" id="search" type="checkbox">
+                            <label for="search" class="toggle-btn" onclick=""><i class="fas fa-search"></i></label>
+                            <form class="submenu" action="../main/index.html" method="post">
+                                <input class="search-txt" id="search-item" type="text" placeholder="찾으실 상품을 입력해주세요">
+                                <!-- <button class="search-btn"><i class="fas fa-search"></i></button> -->
+                            </form>
+                        </div>
+                        <!-- 임시로 구현해본 검색버튼, 추후 js 사용시에 항목 단순화 가능 -->
+                    </li>
+                    <li><a href="../login/login.html"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="../shopingcart/index.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-section">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Main</a>
+                    </li>
+                    <li>
+                        <a href="#new-arrival">신상품</a>
+                    </li>
+                    <li>
+                        <a href="../product/index.html">전체 상품</a>
+                    </li>
+                    <li>
+                        <a href="#">향기</a>
+                        <ul class="sub-nav">
+                            <li><a href="#">Amber</a></li>
+                            <li><a href="#">Aqua marine</a></li>
+                            <li><a href="#">Aromatic</a></li>
+                            <li><a href="#">Citrus</a></li>
+                            <li><a href="#">Floral</a></li>
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Green</a></li>
+                            <li><a href="#">Orental</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        고객센터
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 메인=================================================================-->
+
+    <main>
+        <div class="container">
+            <div class="login_container">
+                <form>
+                    <div class="login">Login</div>
+                    <div class="login_id">
+                        <input type="text" class="id" name="id" placeholder="ID" required>
+                    </div>
+                    <div class="login_pw">
+                        <input type="password" class="pw" name="pw" placeholder="password" required>
+                    </div>
+                    <div class="login_enter">
+                        <a href="stampmain.html" class="login_login">로그인</a>
+                    </div>
+                </form>
+
+                <div class="login_middle">
+                    <a href="#" class="find">ID/PW 찾기</a>
+                    <a href="../injoy/injoy.html" class="join">회원가입</a>
+                </div>
+
+                <span>OR</span>
+
+                <div>
+                    <img src="./image/컬러네이버.png.crdownload" alt="네이버">
+                    <img src="./image/컬러카카오.png" alt="카카오">
+                    <img src="./image/컬러구글.png" alt="구글">
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <!-- 푸터====================================================================== -->
+    <footer class="box-footer">
+        <ul class="w1300">
+            <li>
+                <h2>Perfume</h2>
+                <p>
+                    Human feel infinite happiness in nature.Origo is trying to represent the color of nature, and
+                    tries
+                    to satisfy this happiness through the product.Origo aims to harmonize nature, human and color.
+                </p>
+            </li>
+            <li>
+                <h2>Perfume</h2>
+                <p>
+                    24, Saemal-gil, Opo-eup, Gwangju-si, Gyeonggi-do, Republic of Korea<br />
+                    origokorea@origo.co.kr<br />
+                    +82 (0)70-7491-5705
+                </p>
+            </li>
+            <li>
+                <h2>Newsletter</h2>
+                <p>
+                    With approaching of 2017 HOMI Fair in Milano, we cordially welcome you to visit our booth
+                    at.<br />
+                    Pav24 (Living Habits &amp; Gift) L03A 2017.09.15.Fri. - 09.18.Mon.
+
+                </p>
+            </li>
+            <li>
+                <h2>Instagram</h2>
+                <p class="in_img">
+                </p>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

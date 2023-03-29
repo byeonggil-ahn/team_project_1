@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 전체 컨테이너 영역 */
+.cart_container{
+    position: fixed;
+    width: 100%;
+    max-width: 525px;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+    background-color: #fff;
+    overflow-y: scroll;
+    text-align: center;
+    font-weight: bold;
+
+    border: 1px solid;
+}
+
+.cart-inner_container{
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* hr부분 영역 */
+.cross{
+    box-sizing: content-box;
+}
+
+/* 장바구니 이름부분 컨테이너 */
+.cart_name{
+    line-height: 20px;
+    border-bottom: 2px solid;
+    padding: 8px 16px;
+}
+
+/* 장바구니 전체 영역 */
+.cart_main{
+
+}
+
+/* 장바구니 컨테이너 */
+.cart-item_container{
+
+}
+
+/* 패딩 넣을 컨테이너*/
+.cart-item{
+    padding: 32px 0px;
+}
+
+/* flex 정렬을 위한 컨테이너 */
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* 상픔 이미지 블럭 */
+.cart-img{
+    width: 118px;
+    height: 118px;
+}
+
+.cart-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 상품 정보(이름 삭제 가격) */
+.cart-info{
+    font-size: 80%;
+    text-align: left;
+}
+
+.cart-info p{
+    line-height: 1.2rem;
+}
+
+/* 제품 수량 컨테이너 */
+.cart-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 제품 총 가격 컨테이너 */
+.total_price{
+    padding: 16px;
+}
+
+/* 기프트 텍스트 */
+.gift_container{
+    font-size: 100%;
+    padding-top: 10px;
+}
+/* 포장 방법 선택 컨테이너 */
+.cart-packaging{
+    padding: 15px 0;
+    border-bottom: 1px solid;
+}
+
+.cart-packaging button{
+    border: none;
+    font-size: 1rem;
+    text-decoration: underline;
+    background-color: #fff;
+}
+
+/* 포장 옵션 컨테이너 */
+.package-area{
+    padding-top: 10px;
+}
+
+/* 제품 포장 이미지 */
+.package-img{
+    width: 118px;
+    height: 118px;
+}
+
+.package-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 제품 포장 설명 */
+.package-info{
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.package-info p{
+    line-height: 1.2rem;
+}
+
+/* 포장 갯수 설명 */
+.package-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 선물 메제시 area */
+.gift-message_area{
+    text-align: left;
+    padding: 0 15px;
+}
+
+textarea{
+    width: 100%;
+}
+
+.gift-message_area a{
+    text-decoration: none;
+}
+
+.gift-message_form{
+    padding-top: 10px;
+}
+
+.gift-message_form p{
+    padding: 5px 0;
+}
+
+.gift-message_form textarea{
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 ;
+}
+
+#gift-message_limit{
+   font-size: 80%;
+   padding-bottom: 10px;
+}
+
+/* 할인 영역 컨테이너 */
+
+.discount{
+    padding-top: 10px;
+}
+.discount p{
+    text-align: left;
+    font-size: 90%;
+}
+
+/* 그리드로 나누기 위한 컨테이너 */
+.discount_grid{
+    display: grid;
+    /* grid-template-columns: repeat(2,minmax(0,1fr)); */
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+/* 이벤트 코드 입력 영역 */
+.discount_form-data{
+    /* position 이용하여 붙일 것 */
+}
+
+.text_input{
+    width: 100%;
+    height: 95%;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+/* 쿠폰 적용 버튼 */
+.discount_btn{
+    background-color: #000;
+    border-radius: 999px;
+    height: 40px;
+    width: 100%;
+}
+
+.discount_btn span{
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 주문하기 영역 컨테이너 */
+.form-data{
+    margin:10px 0px;
+}
+
+/* 주문 주의사항 컨테이너 */
+.order_discrp{}
+
+.order_discrp p{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 90%;
+}
+
+/* 주문하기 버튼 영역 */
+.order_btn{
+    background-color: #000;
+    border-radius: 999px;
+    height: 48px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.order_btn button{
+    border: none;
+    background-color: #000;
+    line-height: 48px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 999px
+    
+}
+
+.discount,
+.form-data,
+.order_btn {
+    padding: 0 15px;
+}
